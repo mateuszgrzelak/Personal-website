@@ -1,0 +1,59 @@
+:host {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+}
+
+.content {
+    flex-grow: 1;
+}
+
+.top {
+    padding-top: 50px;
+}
+
+.welcome {
+    margin-top: 20px;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.menu div {
+    margin: 5px 1.5rem;
+}
+
+.description {
+    justify-content: center;
+    font-weight: 300;
+    white-space: normal;
+}
+
+.description div {
+    text-align: justify;
+    max-width: 1000px;
+}
+
+::ng-deep .mat-toolbar-row {
+    height: auto !important;
+    margin: 8px 0;
+}
+
+.menu button {
+    font-size: 1.2rem;
+    margin-right: 20px;
+    border: none;
+    outline: none;
+}
+
+.menu button:last-child {
+    margin-right: 0;
+}
