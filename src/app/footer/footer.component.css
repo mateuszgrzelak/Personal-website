@@ -1,0 +1,13 @@
+.content {
+    font-weight: 400;
+}
+
+.footer_content {
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.6);
+    height: 50px;
+}
+
+.domain_name {
+    color: white
+}
