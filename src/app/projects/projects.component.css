@@ -1,0 +1,58 @@
+:host {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.projects_container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.project_container {
+    margin-left: -200px;
+    max-width: 1200px;
+}
+
+.project_image {
+    float: left;
+}
+
+.project_description_container {
+    float: left;
+    color: rgba(0, 0, 0, 0.74);
+    max-width: 475px;
+}
+
+.project_image {
+    margin-right: 25px;
+}
+
+.project_image img {
+    box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.5), 10px 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+.project_image img {
+    border-radius: 2em 1em 4em / 0.5em 3em;
+}
+
+.project_title {
+    margin-top: 10px;
+}
+
+.project_title h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 46px;
+    letter-spacing: 2px;
+}
+
+.project_description {
+    text-align: justify;
+    line-height: 26px;
+    /* text-indent: 20px; */
+    font-size: 18px;
+}
