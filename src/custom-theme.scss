@@ -19,7 +19,7 @@ $my-website-theme: mat-light-theme($my-website-primary, $my-website-accent, $my-
 // that you are using.
 @include angular-material-theme($my-website-theme);
 .alternate_theme {
-    $alternate-primary: mat-palette($mat-blue-grey);
+    $alternate-primary: mat-palette($mat-purple);
     $alternate-accent: mat-palette($mat-yellow, 400);
     $alternate-theme: mat-light-theme($alternate-primary, $alternate-accent);
     @include angular-material-theme($alternate-theme);
