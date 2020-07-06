@@ -15,9 +15,9 @@
   <mat-toolbar color="primary">
     <mat-toolbar-row>
       <div class="menu alternate_theme">
-        <button mat-raised-button color="primary">About me</button>
-        <button mat-raised-button color="primary">Projects</button>
-        <button mat-raised-button color="primary">Contact</button>
+        <button mat-raised-button color="primary" routerLink="/about">About me</button>
+        <button mat-raised-button color="primary" routerLink="/projects">Projects</button>
+        <button mat-raised-button color="primary" routerLink="/contact">Contact</button>
         <button mat-raised-button color="primary">GitHub</button>
       </div>
     </mat-toolbar-row>
@@ -25,5 +25,10 @@
 
 </span>
 <div class="content">
-  <router-outlet></router-outlet>
+  <div class="content_width">
+    <router-outlet></router-outlet>
+  </div>
 </div>
+<footer>
+  <app-footer></app-footer>
+</footer>
