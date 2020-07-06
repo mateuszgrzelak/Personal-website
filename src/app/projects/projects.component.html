@@ -1,7 +1,27 @@
-<div class="projects_container">
-    <div class="project_title"></div>
-    <div>
-        <img src="../../assets/img/login.gif" alt="todo website gif" width=500 />
-    </div>
-    <div class="project_description"></div>
+<div class="projects_container project_container" [@slideAnimation]="direction">
+    <div class=""></div>
+    <ng-container *ngFor="let slide of slides; let i = index">
+        <div *ngIf="i == currentSlide">
+            <div>
+                <div class="project_image">
+                    <img [src]="slide.src" alt="todo website gif" width=700 />
+                </div>
+                <div class="project_description_container">
+                    <div class="project_title">
+                        <h1>{{slide.tit}}</h1>
+                    </div>
+                    <div class="project_description">
+                        {{slide.des}}
+                    </div>
+                </div>
+                <div style="clear: both;"></div>
+            </div>
+        </div>
+    </ng-container>
+    <button class="control prev" (click)="onPreviousClick()">
+        <span class="arrow arrow_left"></span>
+    </button>
+    <button class="control next" (click)="onNextClick()">
+        <span class="arrow arrow_right"></span>
+    </button>
 </div>

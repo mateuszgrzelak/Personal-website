@@ -6,6 +6,7 @@
 
 .projects_container {
     display: flex;
+    position: relative;
     height: 100%;
     width: 100%;
     align-items: center;
@@ -13,8 +14,8 @@
 }
 
 .project_container {
-    margin-left: -200px;
-    max-width: 1200px;
+    margin-bottom: 20px;
+    position: relative;
 }
 
 .project_image {
@@ -55,4 +56,55 @@
     line-height: 26px;
     /* text-indent: 20px; */
     font-size: 18px;
+}
+
+.control {
+    border: none;
+    background-color: transparent;
+    outline: 0;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.2em;
+    color: rgba(68, 63, 63, 0.8);
+    font-weight: bold;
+    font-size: 4em;
+    user-select: none;
+    opacity: 60%;
+    z-index: 2;
+}
+
+.control:hover {
+    opacity: 1;
+}
+
+.control:focus {
+    opacity: 1;
+}
+
+.arrow {
+    display: block;
+    border-left: 0.1em solid rgba(68, 63, 63, 0.8);
+    border-bottom: 0.1em solid rgba(68, 63, 63, 0.8);
+    width: 0.7em;
+    height: 0.7em;
+}
+
+.arrow_left {
+    transform: rotate(45deg);
+}
+
+.arrow_right {
+    transform: rotate(225deg);
+}
+
+.next {
+    position: absolute;
+    right: 3%;
+}
+
+.prev {
+    position: absolute;
+    left: 3%;
 }
