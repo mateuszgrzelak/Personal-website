@@ -1,1 +1,47 @@
+:host {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
 
+.about_container {
+    max-width: 1000px;
+}
+
+.about_content {
+    color: rgba(0, 0, 0, .74);
+    font-size: 18px;
+    line-height: 32px;
+}
+
+.about_me {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.rule_image {
+    float: left;
+}
+
+.rule_description_container {
+    float: left;
+    margin-left: 20px;
+    margin-top: 10px;
+    max-width: 830px;
+}
+
+.clear {
+    clear: both;
+}
+
+.rule_title {
+    font-size: 1.6rem;
+    font-weight: 450;
+    margin-bottom: 10px;
+}
+
+.rules {
+    margin-bottom: 35px;
+}
