@@ -13,11 +13,6 @@
     justify-content: center;
 }
 
-.project_container {
-    margin-bottom: 20px;
-    position: relative;
-}
-
 .project_image {
     float: left;
 }

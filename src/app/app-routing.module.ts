@@ -6,9 +6,9 @@ import { ContactComponent } from './contact/contact.component';
 
 
 const routes: Routes = [
-  { path: 'aboutme', component: AboutMeComponent },
-  { path: 'projects', component: ProjectsComponent },
-  { path: 'contact', component: ContactComponent },
+  { path: 'aboutme', component: AboutMeComponent, data: { animation: "aboutme" } },
+  { path: 'projects', component: ProjectsComponent, data: { animation: "projects" } },
+  { path: 'contact', component: ContactComponent, data: { animation: "contact" } },
 
   { path: '**', redirectTo: 'aboutme', pathMatch: 'full' },
 ];

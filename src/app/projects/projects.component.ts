@@ -9,9 +9,6 @@ import { MAT_SLIDER_VALUE_ACCESSOR } from '@angular/material/slider';
   animations: [
     trigger('slideAnimation', [
       transition(':increment', group([
-        style({
-          position: 'relative'
-        }),
         query(':enter', [
           style({
             transform: 'translateX(200%)',
