@@ -223,3 +223,35 @@
 .github_animation .hide {
     animation: 0.75s ease-out 0s 1 hideElement;
 }
+
+@media only screen and (min-width: 450px) and (max-width: 567px) {
+    .media {
+        width: 440px;
+        height: 80px;
+    }
+    .description {
+        font-size: 50px;
+    }
+    .icon {
+        font-size: 64px;
+    }
+    .gmail .description {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .media {
+        width: 340px;
+        height: 60px
+    }
+    .description {
+        font-size: 30px;
+    }
+    .icon {
+        font-size: 54px;
+    }
+    .gmail .description {
+        font-size: 20px;
+    }
+}

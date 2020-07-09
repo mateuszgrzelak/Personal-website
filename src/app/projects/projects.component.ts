@@ -11,7 +11,7 @@ import { MAT_SLIDER_VALUE_ACCESSOR } from '@angular/material/slider';
       transition(':increment', group([
         query(':enter', [
           style({
-            transform: 'translateX(200%)',
+            transform: 'translateX(300%)',
             position: 'absolute',
           }),
           animate('1s ease-out', style({
@@ -20,7 +20,7 @@ import { MAT_SLIDER_VALUE_ACCESSOR } from '@angular/material/slider';
         query(':leave', [
           animate('1s ease-out', style({
             position: 'absolute',
-            transform: 'translateX(-200%)'
+            transform: 'translateX(-300%)'
           }))
         ])
       ])),
@@ -72,22 +72,18 @@ export class ProjectsComponent implements OnInit {
 
   onPreviousClick() {
     this.direction -= 1;
-    // this.currentSlide = previous < 0 ? this.slides.length - 1 : previous;
     this.currentSlide = this.direction % this.slidesLength;
     if (this.currentSlide < 0) {
       this.currentSlide = -this.currentSlide;
     }
-    // console.log('current slide: ' + this.currentSlide + ', modulo: ' + (this.currentSlide % this.slidesLength));
   }
 
   onNextClick() {
     this.direction += 1;
-    // this.currentSlide = next === this.slides.length ? 0 : next;
     this.currentSlide = this.direction % this.slidesLength;
     if (this.currentSlide < 0) {
       this.currentSlide = -this.currentSlide;
     }
-    // console.log('current slide: ' + this.currentSlide + ', modulo: ' + (this.currentSlide % this.slidesLength));
   }
 
 }

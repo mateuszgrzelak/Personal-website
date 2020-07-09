@@ -1,27 +1,74 @@
 <span>
+
+
   <mat-toolbar color="primary" class="top">
-    <mat-toolbar-row class="welcome">
-      <span>Welcome</span>
-    </mat-toolbar-row>
-    <mat-toolbar-row class="description">
-      <div>My name is Mateusz Grzelak and I am a Java web developer. I mainly use Spring
-        Framework to create business
-        logic
-        and Angular 9 for visual layer. Below you can find description of some of my projects and principles I
-        follow.
+    <div class="rwd_max">
+      <header>
+        <mat-toolbar-row class="welcome">
+          <span>Welcome</span>
+        </mat-toolbar-row>
+        <mat-toolbar-row class="description">
+          <div>My name is Mateusz Grzelak and I am a Java web developer. I mainly use Spring
+            Framework to create business
+            logic
+            and Angular 9 for visual layer. Below you can find description of some of my projects and principles I
+            follow.
+          </div>
+        </mat-toolbar-row>
+      </header>
+    </div>
+    <!-- RWD -->
+    <div class="rwd_min">
+      <div class="toggle">
+        <div class="toggle_about_me" (click)="expandAboutMe()">
+          <i class="fas fa-user"></i>
+        </div>
       </div>
-    </mat-toolbar-row>
-  </mat-toolbar>
-  <mat-toolbar color="primary">
-    <mat-toolbar-row>
-      <div class="menu alternate_theme">
-        <button mat-raised-button color="primary" routerLink="/about">About me</button>
-        <button mat-raised-button color="primary" routerLink="/projects">Projects</button>
-        <button mat-raised-button color="primary" routerLink="/contact">Contact</button>
-        <button mat-raised-button color="primary">GitHub</button>
+      <div class="collapsible_about_me" *ngIf="aboutMeVisible" [@slideInOutFromLeftToRight]>
+        <div>Welcome</div>
+        <div>My name is Mateusz Grzelak and I am a Java web developer. I mainly use Spring
+          Framework to create business
+          logic
+          and Angular 9 for visual layer. Below you can find description of some of my projects and principles I
+          follow.
+        </div>
       </div>
-    </mat-toolbar-row>
+      <div class="toggle_menu" (click)="expandMenu()">
+        <i class="fas fa-bars"></i>
+      </div>
+      <div class="collapsible_menu" *ngIf="menuVisible" [@slideInOutFromRightToLeft]>
+        <div routerLink="/about" (click)="expandMenu()">
+          About me
+        </div>
+        <div routerLink="/projects" (click)="expandMenu()">
+          Projects
+        </div>
+        <div routerLink="/contact" (click)="expandMenu()">
+          Contact
+        </div>
+        <div>
+          GitHub
+        </div>
+      </div>
+    </div>
+    <!-- RWD -->
+
   </mat-toolbar>
+
+  <div class="rwd_max">
+    <nav>
+      <mat-toolbar color="primary">
+        <mat-toolbar-row>
+          <div class="menu alternate_theme">
+            <button mat-raised-button color="primary" routerLink="/about">About me</button>
+            <button mat-raised-button color="primary" routerLink="/projects">Projects</button>
+            <button mat-raised-button color="primary" routerLink="/contact">Contact</button>
+            <a mat-raised-button color="primary" href="https://github.com/mateuszgrzelak" target="blank">GitHub</a>
+          </div>
+        </mat-toolbar-row>
+      </mat-toolbar>
+    </nav>
+  </div>
 
 </span>
 <div class="content">

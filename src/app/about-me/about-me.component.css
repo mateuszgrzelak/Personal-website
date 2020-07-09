@@ -5,11 +5,7 @@
     justify-content: center;
 }
 
-.about_container {
-    max-width: 1000px;
-}
-
-.about_content {
+.container {
     color: rgba(0, 0, 0, .74);
     font-size: 18px;
     line-height: 32px;
@@ -17,19 +13,49 @@
 
 .about_me {
     margin-top: 20px;
-    margin-bottom: 20px;
     text-align: justify;
 }
 
 .rule_image {
+    border-right: 2px dashed rgba(51, 49, 49, 0.54);
     float: left;
 }
 
+.rule_image img {
+    width: 100%;
+}
+
+.rules {
+    margin-top: 20px;
+    background-color: rgba(233, 233, 233, .54);
+    box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.25), 10px 6px 20px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 70px;
+    padding: 20px;
+}
+
+.rules:last-child {
+    margin-bottom: 20px;
+}
+
+.rules:hover {
+    background-color: rgba(233, 233, 233, .94);
+}
+
+@media only screen and (max-width: 575px) {
+    img {
+        width: 150px !important;
+    }
+    .rule_image {
+        justify-content: center;
+        display: flex;
+        margin-bottom: 10px;
+        border: none;
+    }
+}
+
 .rule_description_container {
+    padding-right: 0;
     float: left;
-    margin-left: 20px;
-    margin-top: 10px;
-    max-width: 830px;
 }
 
 .clear {
@@ -40,8 +66,9 @@
     font-size: 1.6rem;
     font-weight: 450;
     margin-bottom: 10px;
+    text-align: justify;
 }
 
-.rules {
-    margin-bottom: 35px;
+.rule_description {
+    text-align: justify;
 }

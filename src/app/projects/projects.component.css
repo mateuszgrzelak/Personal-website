@@ -1,14 +1,16 @@
 :host {
-    display: block;
+    display: grid;
     height: 100%;
     width: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
 }
 
 .projects_container {
-    display: flex;
-    position: relative;
-    height: 100%;
-    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: grid;
     align-items: center;
     justify-content: center;
 }
@@ -17,14 +19,13 @@
     float: left;
 }
 
+.project_image img {
+    width: 100%;
+}
+
 .project_description_container {
     float: left;
     color: rgba(0, 0, 0, 0.74);
-    max-width: 475px;
-}
-
-.project_image {
-    margin-right: 25px;
 }
 
 .project_image img {
@@ -42,7 +43,7 @@
 .project_title h1 {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
-    font-size: 46px;
+    font-size: 2.5em;
     letter-spacing: 2px;
 }
 
