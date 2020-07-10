@@ -11,7 +11,7 @@ import { MAT_SLIDER_VALUE_ACCESSOR } from '@angular/material/slider';
       transition(':increment', group([
         query(':enter', [
           style({
-            transform: 'translateX(300%)',
+            transform: 'translateX(200%)',
             position: 'absolute',
           }),
           animate('1s ease-out', style({
@@ -20,7 +20,7 @@ import { MAT_SLIDER_VALUE_ACCESSOR } from '@angular/material/slider';
         query(':leave', [
           animate('1s ease-out', style({
             position: 'absolute',
-            transform: 'translateX(-300%)'
+            transform: 'translateX(-200%)'
           }))
         ])
       ])),
@@ -49,8 +49,8 @@ import { MAT_SLIDER_VALUE_ACCESSOR } from '@angular/material/slider';
 export class ProjectsComponent implements OnInit {
 
   public slides = [
-    { src: "../../assets/img/login.gif", tit: "TodosAndJokes", des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus semper aliquam ipsum, non fermentum urna blandit quis. Nunc eu augue orci. Aliquam erat volutpat." },
-    { src: "../../assets/img/pogaduszki.png", tit: "Pogaduszki", des: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus semper aliquam ipsum, non fermentum urna blandit quis. Nunc eu augue orci. Aliquam erat volutpat." }
+    { src: "../../assets/img/login.gif", tit: "TodosAndJokes", des: "Project of website that allows, after logging in, add todos and read jokes. The whole project has been clearly divided into frontend (Angular) and backend (Spring). Authorization is done using JWT.", git: "https://github.com/mateuszgrzelak/todosandjokes" },
+    { src: "../../assets/img/pogaduszki.png", tit: "Pogaduszki", des: "Messenger project where communication is done via RabbitMQ. The visual layer was created using the Thymeleaf template engine. The project also includes registration and authorization using basic authorization.", git: "https://github.com/mateuszgrzelak/pogaduszki" }
   ]
 
   slidesLength = this.slides.length;
