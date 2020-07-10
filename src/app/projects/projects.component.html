@@ -2,16 +2,19 @@
     <ng-container *ngFor="let slide of slides; let i = index">
         <div *ngIf="i == currentSlide">
             <div class="container">
-                <div class="project_image col-12 col-lg-8">
+                <div class="project_image col-12 col-lg-7 col-xl-8">
                     <img [src]="slide.src" alt="todo website gif" />
                 </div>
-                <div class="project_description_container col-12 col-lg-4">
+                <div class="project_description_container col-12 col-lg-5 col-xl-4">
                     <div class="project_title">
-                        <h1>{{slide.tit}}</h1>
+                        <a href="{{slide.git}}" target="blank">
+                            <h1><i class="fab fa-github"></i>{{slide.tit}}</h1>
+                        </a>
                     </div>
                     <div class="project_description">
                         {{slide.des}}
                     </div>
+
                 </div>
                 <div style="clear: both;"></div>
             </div>

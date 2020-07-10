@@ -2,7 +2,6 @@
     display: grid;
     height: 100%;
     width: 100%;
-    display: grid;
     align-items: center;
     justify-content: center;
 }
@@ -10,7 +9,7 @@
 .projects_container {
     margin-top: 15px;
     margin-bottom: 15px;
-    display: grid;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
@@ -37,7 +36,16 @@
 }
 
 .project_title {
-    margin-top: 10px;
+    margin-top: 20px;
+}
+
+.project_title {
+    margin-top: 20px;
+    font-size: 0.85em;
+}
+
+.project_title a {
+    color: rgba(0, 0, 0, 0.74);
 }
 
 .project_title h1 {
@@ -67,7 +75,7 @@
     font-weight: bold;
     font-size: 4em;
     user-select: none;
-    opacity: 60%;
+    opacity: 0.6;
     z-index: 2;
 }
 

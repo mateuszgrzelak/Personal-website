@@ -23,7 +23,6 @@
 
 .top {
     padding-top: 10px;
-    padding-bottom: 15px;
 }
 
 .mat-toolbar-single-row {
@@ -145,6 +144,11 @@
 
 .collapsible_menu div {
     padding: 16px;
+    color: #fff;
+}
+
+.collapsible_menu a {
+    text-decoration: none;
 }
 
 .collapsible_menu div:first-child {
