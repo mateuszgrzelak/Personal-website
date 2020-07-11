@@ -190,6 +190,7 @@
 @media only screen and (max-width: 767px) {
     .rwd_min {
         display: block;
+        padding-bottom: 15px;
     }
     .rwd_max {
         display: none;

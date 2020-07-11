@@ -49,8 +49,8 @@ import { MAT_SLIDER_VALUE_ACCESSOR } from '@angular/material/slider';
 export class ProjectsComponent implements OnInit {
 
   public slides = [
-    { src: "../../assets/img/login.gif", tit: "TodosAndJokes", des: "Project of website that allows, after logging in, add todos and read jokes. The whole project has been clearly divided into frontend (Angular) and backend (Spring). Authorization is done using JWT.", git: "https://github.com/mateuszgrzelak/todosandjokes" },
-    { src: "../../assets/img/pogaduszki.png", tit: "Pogaduszki", des: "Messenger project where communication is done via RabbitMQ. The visual layer was created using the Thymeleaf template engine. The project also includes registration and authorization using basic authorization.", git: "https://github.com/mateuszgrzelak/pogaduszki" }
+    { src: "../../assets/img/login.gif", tit: "TodosAndJokes", des: "Project of website that allows, after logging in, add todos and read jokes. The whole project has been clearly divided into frontend (Angular) and backend (Spring). Authorization process uses JWT to confirm user's identity.", git: "https://github.com/mateuszgrzelak/todosandjokes" },
+    { src: "../../assets/img/pogaduszki.png", tit: "Pogaduszki", des: "Messenger project where communication takes place using RabbitMQ. The visual layer was created using the Thymeleaf template engine. The project also includes registration and authorization using basic authorization.", git: "https://github.com/mateuszgrzelak/pogaduszki" }
   ]
 
   slidesLength = this.slides.length;
@@ -85,5 +85,6 @@ export class ProjectsComponent implements OnInit {
       this.currentSlide = -this.currentSlide;
     }
   }
+
 
 }
