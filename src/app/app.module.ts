@@ -1,4 +1,4 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, HammerModule, HAMMER_GESTURE_CONFIG, HammerGestureConfig } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -10,6 +10,12 @@ import { FooterComponent } from './footer/footer.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
 
+export class MyHammerConfig extends HammerGestureConfig {
+  overrides = <any>{
+    'pinch': { enable: false },
+    'rotate': { enable: false }
+  }
+}
 
 @NgModule({
   declarations: [
@@ -24,9 +30,12 @@ import { ContactComponent } from './contact/contact.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     AngularMaterialModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HammerModule
   ],
-  providers: [],
+  providers: [
+    { provide: HAMMER_GESTURE_CONFIG, useClass: MyHammerConfig }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
