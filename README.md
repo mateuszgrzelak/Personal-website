@@ -1,3 +1,3 @@
 # Personal website
 
-Personal website project created with Angular9. The Website is availabe at [www.mateuszgrzelak.pl](https://mateuszgrzelak.pl)
+Personal website project created with Angular9. The Website is available at [www.mateuszgrzelak.pl](https://mateuszgrzelak.pl)
