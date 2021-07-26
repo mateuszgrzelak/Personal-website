@@ -22,10 +22,10 @@ describe('AppComponent', () => {
     expect(app.title).toEqual('personal-website');
   });
 
-  it('should render title', () => {
+  it('should render greeting', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('personal-website app is running!');
+    expect(compiled.querySelector('#greeting').textContent).toContain('Hello!');
   });
 });
